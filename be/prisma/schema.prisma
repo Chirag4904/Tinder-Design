@@ -18,4 +18,5 @@ model Feeds {
   USER_A_ID Int
   USER_B_ID Int
   Liked     Boolean?
+   @@unique([USER_A_ID, USER_B_ID])
 }
